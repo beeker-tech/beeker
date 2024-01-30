@@ -5,7 +5,7 @@
   </a>
 </p>
 
-# Report your Beeker Tech issues
+# Beeker Tech issues
 
 A space dedicated to all beeker technical issues, for bêta testers.
 
