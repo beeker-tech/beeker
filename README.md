@@ -1,4 +1,4 @@
-# issues
+# Issues
 
 A space dedicated to all beeker technical issues, for bêta testers.
 
