@@ -15,6 +15,7 @@ More information at [beeker.tech](https://www.beeker.tech)
 
 ## Getting started
 
+You can get started for free with your own OpenAI API key.
 Please find the documentation at [docs.beeker.tech](https://docs.beeker.tech)
   
 ## Report issues
