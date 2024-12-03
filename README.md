@@ -17,7 +17,7 @@ More information at [beeker.tech](https://www.beeker.tech)
 
 Please find the documentation at [docs.beeker.tech](https://docs.beeker.tech)
   
-# Report issues
+## Report issues
 
 Please report your issues in "Issues" tab above ⬆️.
 
