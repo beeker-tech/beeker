@@ -1,0 +1,71 @@
+{
+  "name": "engine-cli",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/engine/cli/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "outputPath": "dist/libs/engine/cli",
+        "main": "libs/engine/cli/src/index.ts",
+        "tsConfig": "libs/engine/cli/tsconfig.lib.json",
+        "isolatedConfig": true,
+        "optimization": true,
+        "webpackConfig": "libs/engine/cli/webpack.config.js",
+        "generatePackageJson": true,
+        "assets": ["libs/engine/cli/*.md", "libs/engine/cli/LICENSE"]
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "options": {
+        "buildTarget": "engine-cli:build",
+        "port": 4002
+      },
+      "dependsOn": ["build"]
+    },
+    "start": {
+      "executor": "@nx/js:node",
+      "options": {
+        "buildTarget": "engine-cli:build",
+        "port": 4002,
+        "watch": false
+      },
+      "dependsOn": ["build"]
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs engine-cli {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/engine/cli/**/*.ts",
+          "libs/engine/cli/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/engine/cli/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@beeker-tech/engine-cli": ["libs/engine/cli/src/index.ts"],
+      "@beeker-tech/engine-common": ["libs/engine/common/src/index.ts"],
+      "@beeker-tech/engine-core": ["libs/engine/core/src/index.ts"],
+      "@beeker-tech/engine-core/*": ["libs/engine/core/src/*"],
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

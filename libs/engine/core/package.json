@@ -1,0 +1,27 @@
+{
+  "name": "@beeker-tech/engine-core",
+  "version": "0.9.1",
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "license": "./LICENSE",
+  "description": "Orchestrate AI in any codebase.",
+  "repository": "https://github.com/beeker-tech",
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://www.beeker.tech",
+  "keywords": [
+    "ai",
+    "orchestrator",
+    "artificial",
+    "intelligence",
+    "beeker"
+  ],
+  "author": {
+    "name": "Sebastien Vanson"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
