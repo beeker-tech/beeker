@@ -1,11 +1,18 @@
-# engine-core
+<!-- markdownlint-disable MD033 MD041 -->
+<p align="center" style="margin-top: 20px;">
+  <a href="https://www.beeker.tech">
+    <img src="https://ik.imagekit.io/beeker/logo.svg?updatedAt=1733168675673" alt="Beeker logo" width="75" />
+  </a>
+</p>
 
-This library was generated with [Nx](https://nx.dev).
+# Engine Core
 
-## Building
+This is the core library that is part of the @beeker-tech ecosystem.
 
-Run `nx build engine-core` to build the library.
+## About Beeker Tech
 
-## Running unit tests
+Beeker is an **Artificial** **Intelligence** **Orchestration Technology** for generating code in your codebase.
 
-Run `nx test engine-core` to execute the unit tests via [Jest](https://jestjs.io).
+It works with any language and any framework, and is based on openAI.
+
+More information at [beeker.tech](https://www.beeker.tech)
