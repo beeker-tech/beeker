@@ -16,7 +16,7 @@ More information at [beeker.tech](https://www.beeker.tech)
 ## Getting started
 
 You can get started for free with your own OpenAI API key.
-Please find the documentation at [docs.beeker.tech](https://docs.beeker.tech)
+Please read the [documentation](https://docs.beeker.tech/get-started/CLI/Installation)
   
 ## Report issues
 
@@ -31,5 +31,7 @@ This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENS
 ## Stay in touch
 
 - Author - Sébastien Vanson
+
+- Documentation - [docs.beeker.tech](https://docs.beeker.tech)
 
 - Website - [https://www.beeker.tech](https://www.beeker.tech)
